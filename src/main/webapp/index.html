@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>First page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://png.pngtree.com/background/20210712/original/pngtree-tropical-plant-blue-purple-neon-effect-leaves-business-background-picture-image_1173627.jpg), #000;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+
+.wrapper a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+</style>
+</head>
+<body>
+<!--<form action="addStudentServlet" method="post">
+Enter Id : <input type="number" name="id"><br>
+<br>
+Enter First name : <input type="text" name="first-name"><br>
+<br>
+Enter Last name : <input type="text" name="last-name"><br>
+<br>
+Enter Mother's name : <input type="text" name="mother-name"><br>
+<br>
+Enter Father's name : <input type="text" name="father-name"><br>
+<br>
+<input type="submit" >
+</form>
+-->
+
+<!-- 
+<div class="container">
+<form action="addStudentServlet" method="post">
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Enter Id :</label>
+  <input type="number" name="id" class="form-control" id="formGroupExampleInput" placeholder="">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Enter First Name :</label>
+  <input type="text" name="first-name" class="form-control" id="formGroupExampleInput2" placeholder="">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Enter Last Name :</label>
+  <input type="text" name="last-name" class="form-control" id="formGroupExampleInput" placeholder="">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Enter mother Name :</label>
+  <input type="text" name="mother-name" class="form-control" id="formGroupExampleInput2" placeholder="">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Enter Father Name :</label>
+  <input type="text" name="father-name" class="form-control" id="formGroupExampleInput2" placeholder="">
+</div>
+<input type="submit" >
+</form>
+</div>
+ -->
+
+
+
+<!-- .................................................................... -->
+<div class="wrapper">
+<form action="addStudentServlet" method="post">
+      <div class="mb-3 input-field">
+  <input type="number" name="id" class="form-control" id="formGroupExampleInput" placeholder="Enter Id " required>
+</div>
+<div class="mb-3 input-field">
+  <input type="text" name="first-name" class="form-control" id="formGroupExampleInput2" placeholder="First Name" required>
+</div>
+<div class="mb-3 input-field">
+  <input type="text" name="last-name" class="form-control" id="formGroupExampleInput" placeholder="Last Name" required>
+</div>
+<div class="mb-3 input-field">
+  <input type="text" name="mother-name" class="form-control" id="formGroupExampleInput2" placeholder="Mother Name">
+</div>
+<div class="mb-3 input-field">
+  <input type="text" name="father-name" class="form-control" id="formGroupExampleInput2" placeholder="Father Name">
+</div>
+<button type="submit">Submit</button>
+      
+</form>
+  </div>
+
+<!-- ...................................................................... -->
+
+
+</body>
+</html>
